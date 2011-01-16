@@ -1,0 +1,10 @@
+<debug>
+    <filename id="name">debug.log</filename>
+    <modules>
+        <module>Finance</module>
+        <module>Admin</module>
+        <module>HR</module>
+    </modules>
+    <level>2</level>
+</debug>
+
