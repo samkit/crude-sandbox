@@ -51,8 +51,6 @@ private:
     functor<return_type, function_arguments...>& m_functor;
 };
 
-template <typename class_type> class composed;
-
 template <typename class_type, typename return_type, typename... function_arguments>
 class function
 {
@@ -72,8 +70,6 @@ public:
 private:
     functor<return_type, function_arguments...>& m_filter;
     pointer m_function;
-
-    friend class composed<class_type>;
 };
 
 template <typename class_type>
