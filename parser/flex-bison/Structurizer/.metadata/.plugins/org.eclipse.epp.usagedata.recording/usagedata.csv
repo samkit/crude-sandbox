@@ -1,0 +1,14 @@
+what,kind,bundleId,bundleVersion,description,time
+closed,view,org.eclipse.ui.views,3.4.0.I20090525-2000,"org.eclipse.ui.views.ContentOutline",1250398146359
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.window.closeAllPerspectives",1250398146421
+closed,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1250398154519
+stopped,bundle,org.eclipse.cdt.debug.mi.ui,6.0.0.200906161748,"org.eclipse.cdt.debug.mi.ui",1250398155430
+stopped,bundle,com.trolltech.qtcppproject,1.5.2,"com.trolltech.qtcppproject",1250398155431
+stopped,bundle,org.eclipse.cdt.debug.mi.core,6.0.0.200906161748,"org.eclipse.cdt.debug.mi.core",1250398155431
+stopped,bundle,org.eclipse.cdt.dsf.gdb.ui,2.0.0.200906161748,"org.eclipse.cdt.dsf.gdb.ui",1250398155432
+stopped,bundle,org.eclipse.cdt.dsf.ui,2.0.0.200906161748,"org.eclipse.cdt.dsf.ui",1250398155432
+stopped,bundle,org.eclipse.cdt.launch,6.0.0.200906161748,"org.eclipse.cdt.launch",1250398155438
+stopped,bundle,org.eclipse.cdt.debug.ui,6.0.0.200906161748,"org.eclipse.cdt.debug.ui",1250398155438
+stopped,bundle,org.eclipse.cdt.dsf.gdb,2.0.0.200906161748,"org.eclipse.cdt.dsf.gdb",1250398155478
+stopped,bundle,org.eclipse.cdt.dsf,2.0.0.200906161748,"org.eclipse.cdt.dsf",1250398155538
+stopped,bundle,org.eclipse.cdt.debug.core,6.0.0.200906161748,"org.eclipse.cdt.debug.core",1250398155606
