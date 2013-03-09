@@ -90,7 +90,7 @@ object EasyProblems extends App {
             yield (one.length, one.head)
     }
 
-	override def main(args: Array[String]) = {
-	    println(p10(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
-	}
+    override def main(args: Array[String]) = {
+        println(p10(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
+    }
 }
