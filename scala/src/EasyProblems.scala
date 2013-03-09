@@ -91,6 +91,6 @@ object EasyProblems extends App {
     }
 
     override def main(args: Array[String]) = {
-        println(p10(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
+//      println(p10(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
     }
 }
