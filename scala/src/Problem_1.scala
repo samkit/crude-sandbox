@@ -29,12 +29,27 @@ object Problem_1 extends App {
         reverse(List(), list)
     }
     
+    // TODO 
     // println(p6(List(1, 2, 3, 2, 1)))
-    def p6[T](list : List[T]) : Boolean = {
-        return true
+    def p6[T](list : List[T]) : Unit = {
+        def isPalindrom(left : List[T], right : List[T]) : Unit = (left, right) match {
+            case (first :: rest, right) if rest.length != right.length => {
+                println("Check1", first, rest, right)
+                isPalindrom(rest, first :: right)
+            }
+            case (fl :: left, fr :: right) =>
+            case _ => println("nothing")
+        }
+        isPalindrom(list, List())
+    }
+    
+    def p7[T](list : List[T]) : List[T] = {
+        list
     }
 
 	override def main(args : Array[String]) = {
-	    println(p6(List(1, 2, 3, 2, 1)))
+//	    println(p7(List(List(1, 1), 2, List(3, List(5, 8)))))
+        println("helo")
+        println("hello world")
 	}
 }
