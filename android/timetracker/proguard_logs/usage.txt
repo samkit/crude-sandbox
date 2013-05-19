@@ -1,5 +1,22 @@
 android.annotation.SuppressLint
 android.annotation.TargetApi
+com.deploygate.sdk.DeployGate
+com.deploygate.sdk.DeployGate$1
+com.deploygate.sdk.DeployGate$1$1
+com.deploygate.sdk.DeployGate$1$2
+com.deploygate.sdk.DeployGate$2
+com.deploygate.sdk.DeployGate$3
+com.deploygate.sdk.DeployGate$4
+com.deploygate.sdk.DeployGate$LogCatTranportWorker
+com.deploygate.sdk.DeployGateCallback
+com.deploygate.sdk.DeployGateUncaughtExceptionHandler
+com.deploygate.service.DeployGateEvent
+com.deploygate.service.IDeployGateSdkService
+com.deploygate.service.IDeployGateSdkService$Stub
+com.deploygate.service.IDeployGateSdkService$Stub$Proxy
+com.deploygate.service.IDeployGateSdkServiceCallback
+com.deploygate.service.IDeployGateSdkServiceCallback$Stub
+com.deploygate.service.IDeployGateSdkServiceCallback$Stub$Proxy
 com.example.timetracker.BuildConfig
 com.example.timetracker.R:
     10:28:public R()
@@ -10,6 +27,12 @@ com.example.timetracker.R$id:
 com.example.timetracker.R$layout:
     24:24:public R$layout()
 com.example.timetracker.R$string
+com.example.timetracker.TimeTracker:
+    19:19:public void timer_$eq(com.example.timetracker.AsyncTimer)
+com.example.timetracker.TimeTracker$$anonfun$onCreate$1:
+    public static final long serialVersionUID
+com.example.timetracker.TimeTracker$$anonfun$onSaveInstanceState$1:
+    public static final long serialVersionUID
 scala.AnyVal
 scala.AnyValCompanion
 scala.App
@@ -28,7 +51,6 @@ scala.Array$:
     57:57:public long[] emptyLongArray()
     58:58:public short[] emptyShortArray()
     59:59:public java.lang.Object[] emptyObjectArray()
-    62:62:public scala.collection.generic.CanBuildFrom canBuildFrom(scala.reflect.ClassTag)
     70:70:public scala.collection.mutable.ArrayBuilder newBuilder(scala.reflect.ClassTag)
     111:111:public java.lang.Object empty(scala.reflect.ClassTag)
     121:124:public java.lang.Object apply(scala.collection.Seq,scala.reflect.ClassTag)
@@ -62,7 +84,6 @@ scala.Array$:
     420:434:public java.lang.Object iterate(java.lang.Object,int,scala.Function1,scala.reflect.ClassTag)
     443:443:public scala.Option unapplySeq(java.lang.Object)
     50:50:private java.lang.Object readResolve()
-scala.Array$$anon$2
 scala.Array$$anonfun$apply$1
 scala.Array$$anonfun$apply$10
 scala.Array$$anonfun$apply$2
@@ -433,7 +454,6 @@ scala.Function1$class:
     39:39:public static float apply$mcFJ$sp(scala.Function1,long)
     39:39:public static int apply$mcIJ$sp(scala.Function1,long)
     39:39:public static long apply$mcJJ$sp(scala.Function1,long)
-    39:39:public static void apply$mcVJ$sp(scala.Function1,long)
     47:47:public static scala.Function1 compose$mcZD$sp(scala.Function1,scala.Function1)
     47:47:public static scala.Function1 compose$mcDD$sp(scala.Function1,scala.Function1)
     47:47:public static scala.Function1 compose$mcFD$sp(scala.Function1,scala.Function1)
@@ -520,8 +540,8 @@ scala.Function1$mcVF$sp
 scala.Function1$mcVF$sp$class
 scala.Function1$mcVI$sp:
     public abstract void apply(int)
-scala.Function1$mcVJ$sp
-scala.Function1$mcVJ$sp$class
+scala.Function1$mcVJ$sp:
+    public abstract void apply(long)
 scala.Function1$mcZD$sp
 scala.Function1$mcZD$sp$class
 scala.Function1$mcZF$sp
@@ -1083,7 +1103,6 @@ scala.Long$
 scala.LowPriorityImplicits:
     36:36:public byte byteWrapper(byte)
     37:37:public short shortWrapper(short)
-    38:38:public int intWrapper(int)
     39:39:public char charWrapper(char)
     40:40:public long longWrapper(long)
     41:41:public float floatWrapper(float)
@@ -1447,7 +1466,6 @@ scala.Predef$:
     330:330:public scala.collection.mutable.ArrayOps doubleArrayOps(double[])
     331:331:public scala.collection.mutable.ArrayOps floatArrayOps(float[])
     332:332:public scala.collection.mutable.ArrayOps intArrayOps(int[])
-    333:333:public scala.collection.mutable.ArrayOps longArrayOps(long[])
     335:335:public scala.collection.mutable.ArrayOps shortArrayOps(short[])
     336:336:public scala.collection.mutable.ArrayOps unitArrayOps(scala.runtime.BoxedUnit[])
     340:340:public short byte2short(byte)
@@ -5234,7 +5252,6 @@ scala.collection.immutable.Range:
     266:266:public final int sum(scala.math.Numeric)
     271:271:public scala.collection.immutable.Range toIterable()
     273:273:public scala.collection.immutable.Range toSeq()
-    136:136:public final void foreach$mVc$sp(scala.Function1)
     44:44:public bridge synthetic scala.collection.GenTraversable toTraversable()
     44:44:public bridge synthetic scala.collection.GenMap groupBy(scala.Function1)
     44:44:public bridge synthetic scala.collection.TraversableView view(int,int)
@@ -6344,19 +6361,28 @@ scala.collection.mutable.ArrayBuilder:
     public static scala.collection.mutable.ArrayBuilder make(scala.reflect.ClassTag)
     24:24:public scala.collection.mutable.Builder mapResult(scala.Function1)
     24:24:public scala.collection.generic.Growable $plus$eq(java.lang.Object,java.lang.Object,scala.collection.Seq)
-scala.collection.mutable.ArrayBuilder$
-scala.collection.mutable.ArrayBuilder$ofBoolean
-scala.collection.mutable.ArrayBuilder$ofByte
+scala.collection.mutable.ArrayBuilder$:
+    30:30:private java.lang.Object readResolve()
+scala.collection.mutable.ArrayBuilder$ofBoolean:
+    616:616:public void clear()
+scala.collection.mutable.ArrayBuilder$ofByte:
+    168:168:public void clear()
 scala.collection.mutable.ArrayBuilder$ofChar:
     296:296:public void clear()
-scala.collection.mutable.ArrayBuilder$ofDouble
-scala.collection.mutable.ArrayBuilder$ofFloat
-scala.collection.mutable.ArrayBuilder$ofInt
-scala.collection.mutable.ArrayBuilder$ofLong
+scala.collection.mutable.ArrayBuilder$ofDouble:
+    552:552:public void clear()
+scala.collection.mutable.ArrayBuilder$ofFloat:
+    488:488:public void clear()
+scala.collection.mutable.ArrayBuilder$ofInt:
+    360:360:public void clear()
+scala.collection.mutable.ArrayBuilder$ofLong:
+    424:424:public void clear()
 scala.collection.mutable.ArrayBuilder$ofRef:
     104:104:public void clear()
-scala.collection.mutable.ArrayBuilder$ofShort
-scala.collection.mutable.ArrayBuilder$ofUnit
+scala.collection.mutable.ArrayBuilder$ofShort:
+    232:232:public void clear()
+scala.collection.mutable.ArrayBuilder$ofUnit:
+    680:680:public void clear()
 scala.collection.mutable.ArrayLike:
     public abstract scala.collection.IndexedSeq deep()
 scala.collection.mutable.ArrayLike$$anon$1
@@ -6515,8 +6541,131 @@ scala.collection.mutable.ArrayOps$ofFloat
 scala.collection.mutable.ArrayOps$ofFloat$
 scala.collection.mutable.ArrayOps$ofInt
 scala.collection.mutable.ArrayOps$ofInt$
-scala.collection.mutable.ArrayOps$ofLong
-scala.collection.mutable.ArrayOps$ofLong$
+scala.collection.mutable.ArrayOps$ofLong:
+    165:165:public scala.collection.parallel.mutable.ParArray par()
+    165:165:public java.lang.Object flatten(scala.Function1,scala.reflect.ClassTag)
+    165:165:public java.lang.Object[] transpose(scala.Function1)
+    165:165:public scala.collection.parallel.Combiner parCombiner()
+    165:165:public scala.collection.IndexedSeq deep()
+    165:165:public java.lang.Object scala$collection$IndexedSeqOptimized$$super$reduceLeft(scala.Function2)
+    165:165:public java.lang.Object scala$collection$IndexedSeqOptimized$$super$reduceRight(scala.Function2)
+    165:165:public java.lang.Object scala$collection$IndexedSeqOptimized$$super$zip(scala.collection.GenIterable,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object scala$collection$IndexedSeqOptimized$$super$init()
+    165:165:public boolean scala$collection$IndexedSeqOptimized$$super$endsWith(scala.collection.GenSeq)
+    165:165:public scala.Option find(scala.Function1)
+    165:165:public java.lang.Object foldRight(java.lang.Object,scala.Function2)
+    165:165:public java.lang.Object reduceLeft(scala.Function2)
+    165:165:public java.lang.Object reduceRight(scala.Function2)
+    165:165:public java.lang.Object zip(scala.collection.GenIterable,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object zipWithIndex(scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object init()
+    165:165:public java.lang.Object takeRight(int)
+    165:165:public java.lang.Object dropRight(int)
+    165:165:public scala.Tuple2 splitAt(int)
+    165:165:public java.lang.Object takeWhile(scala.Function1)
+    165:165:public java.lang.Object dropWhile(scala.Function1)
+    165:165:public scala.Tuple2 span(scala.Function1)
+    165:165:public int indexWhere(scala.Function1,int)
+    165:165:public int lastIndexWhere(scala.Function1,int)
+    165:165:public boolean startsWith(scala.collection.GenSeq,int)
+    165:165:public boolean endsWith(scala.collection.GenSeq)
+    165:165:public scala.collection.mutable.IndexedSeqView view()
+    165:165:public scala.collection.mutable.IndexedSeqView view(int,int)
+    165:165:public scala.collection.Iterator permutations()
+    165:165:public scala.collection.Iterator combinations(int)
+    165:165:public java.lang.Object reverseMap(scala.Function1,scala.collection.generic.CanBuildFrom)
+    165:165:public int indexOfSlice(scala.collection.GenSeq)
+    165:165:public int indexOfSlice(scala.collection.GenSeq,int)
+    165:165:public int lastIndexOfSlice(scala.collection.GenSeq)
+    165:165:public int lastIndexOfSlice(scala.collection.GenSeq,int)
+    165:165:public boolean containsSlice(scala.collection.GenSeq)
+    165:165:public java.lang.Object union(scala.collection.GenSeq,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object diff(scala.collection.GenSeq)
+    165:165:public java.lang.Object intersect(scala.collection.GenSeq)
+    165:165:public java.lang.Object distinct()
+    165:165:public java.lang.Object patch(int,scala.collection.GenSeq,int,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object updated(int,java.lang.Object,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object $plus$colon(java.lang.Object,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object $colon$plus(java.lang.Object,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object padTo(int,java.lang.Object,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object sortWith(scala.Function2)
+    165:165:public java.lang.Object sortBy(scala.Function1,scala.math.Ordering)
+    165:165:public java.lang.Object sorted(scala.math.Ordering)
+    165:165:public scala.collection.Seq toSeq()
+    165:165:public scala.collection.immutable.Range indices()
+    165:165:public int indexWhere(scala.Function1)
+    165:165:public int indexOf(java.lang.Object)
+    165:165:public int indexOf(java.lang.Object,int)
+    165:165:public int lastIndexOf(java.lang.Object)
+    165:165:public int lastIndexOf(java.lang.Object,int)
+    165:165:public int lastIndexWhere(scala.Function1)
+    165:165:public boolean startsWith(scala.collection.GenSeq)
+    165:165:public scala.collection.Iterable toIterable()
+    165:165:public scala.collection.Iterator grouped(int)
+    165:165:public scala.collection.Iterator sliding(int)
+    165:165:public scala.collection.Iterator sliding(int,int)
+    165:165:public java.lang.Object zipAll(scala.collection.GenIterable,java.lang.Object,java.lang.Object,scala.collection.generic.CanBuildFrom)
+    165:165:public boolean hasDefiniteSize()
+    165:165:public java.lang.Object $plus$plus$colon(scala.collection.TraversableOnce,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object $plus$plus$colon(scala.collection.Traversable,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object flatMap(scala.Function1,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object collect(scala.PartialFunction,scala.collection.generic.CanBuildFrom)
+    165:165:public scala.Tuple2 partition(scala.Function1)
+    165:165:public scala.collection.immutable.Map groupBy(scala.Function1)
+    165:165:public java.lang.Object scan(java.lang.Object,scala.Function2,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object scanLeft(java.lang.Object,scala.Function2,scala.collection.generic.CanBuildFrom)
+    165:165:public java.lang.Object scanRight(java.lang.Object,scala.Function2,scala.collection.generic.CanBuildFrom)
+    165:165:public scala.Option headOption()
+    165:165:public scala.Option lastOption()
+    165:165:public scala.collection.Iterator tails()
+    165:165:public scala.collection.Iterator inits()
+    165:165:public scala.collection.Traversable toTraversable()
+    165:165:public scala.collection.generic.FilterMonadic withFilter(scala.Function1)
+    165:165:public scala.collection.immutable.List reversed()
+    165:165:public int count(scala.Function1)
+    165:165:public scala.Option collectFirst(scala.PartialFunction)
+    165:165:public java.lang.Object $colon$bslash(java.lang.Object,scala.Function2)
+    165:165:public scala.Option reduceLeftOption(scala.Function2)
+    165:165:public scala.Option reduceRightOption(scala.Function2)
+    165:165:public java.lang.Object reduce(scala.Function2)
+    165:165:public scala.Option reduceOption(scala.Function2)
+    165:165:public java.lang.Object fold(java.lang.Object,scala.Function2)
+    165:165:public java.lang.Object aggregate(java.lang.Object,scala.Function2,scala.Function2)
+    165:165:public java.lang.Object sum(scala.math.Numeric)
+    165:165:public java.lang.Object product(scala.math.Numeric)
+    165:165:public java.lang.Object min(scala.math.Ordering)
+    165:165:public java.lang.Object max(scala.math.Ordering)
+    165:165:public java.lang.Object maxBy(scala.Function1,scala.math.Ordering)
+    165:165:public java.lang.Object minBy(scala.Function1,scala.math.Ordering)
+    165:165:public void copyToArray(java.lang.Object)
+    165:165:public scala.collection.immutable.IndexedSeq toIndexedSeq()
+    165:165:public scala.collection.immutable.Vector toVector()
+    165:165:public scala.collection.mutable.StringBuilder addString(scala.collection.mutable.StringBuilder,java.lang.String)
+    165:165:public scala.collection.mutable.StringBuilder addString(scala.collection.mutable.StringBuilder)
+    165:165:public java.lang.Object $div$colon$bslash(java.lang.Object,scala.Function2)
+    167:167:public scala.collection.mutable.WrappedArray thisCollection()
+    168:168:public scala.collection.mutable.WrappedArray toCollection(long[])
+    169:169:public scala.collection.mutable.ArrayBuilder$ofLong newBuilder()
+    172:172:public long apply(int)
+    173:173:public void update(int,long)
+    165:165:public bridge synthetic scala.collection.GenMap toMap(scala.Predef$$less$colon$less)
+    165:165:public bridge synthetic scala.collection.GenSet toSet()
+    165:165:public bridge synthetic scala.collection.GenTraversable toTraversable()
+    165:165:public bridge synthetic scala.collection.GenMap groupBy(scala.Function1)
+    165:165:public bridge synthetic scala.collection.GenIterable toIterable()
+    165:165:public bridge synthetic scala.collection.GenSeq toSeq()
+    165:165:public bridge synthetic scala.collection.TraversableView view(int,int)
+    165:165:public bridge synthetic scala.collection.IterableView view(int,int)
+    165:165:public bridge synthetic scala.collection.SeqView view(int,int)
+    165:165:public bridge synthetic scala.collection.TraversableView view()
+    165:165:public bridge synthetic scala.collection.IterableView view()
+    165:165:public bridge synthetic scala.collection.SeqView view()
+    165:165:public bridge synthetic scala.collection.Parallel par()
+    165:165:public bridge synthetic void update(int,java.lang.Object)
+    165:165:public bridge synthetic scala.collection.Traversable toCollection(java.lang.Object)
+    165:165:public bridge synthetic scala.collection.Iterable toCollection(java.lang.Object)
+scala.collection.mutable.ArrayOps$ofLong$:
+    173:173:public final void update$extension(long[],int,long)
 scala.collection.mutable.ArrayOps$ofRef:
     105:105:public scala.collection.parallel.mutable.ParArray par()
     105:105:public java.lang.Object flatten(scala.Function1,scala.reflect.ClassTag)
@@ -9332,7 +9481,6 @@ scala.runtime.AbstractFunction1:
     12:12:public float apply$mcFJ$sp(long)
     12:12:public int apply$mcIJ$sp(long)
     12:12:public long apply$mcJJ$sp(long)
-    12:12:public void apply$mcVJ$sp(long)
     12:12:public scala.Function1 compose(scala.Function1)
     12:12:public scala.Function1 compose$mcZD$sp(scala.Function1)
     12:12:public scala.Function1 compose$mcDD$sp(scala.Function1)
@@ -9400,7 +9548,6 @@ scala.runtime.AbstractFunction1$mcJI$sp
 scala.runtime.AbstractFunction1$mcJJ$sp
 scala.runtime.AbstractFunction1$mcVD$sp
 scala.runtime.AbstractFunction1$mcVF$sp
-scala.runtime.AbstractFunction1$mcVJ$sp
 scala.runtime.AbstractFunction1$mcZD$sp
 scala.runtime.AbstractFunction1$mcZF$sp
 scala.runtime.AbstractFunction1$mcZI$sp

@@ -3,8 +3,8 @@ com.example.timetracker.R$id: int current_time
 com.example.timetracker.R$id: int lap_number
 com.example.timetracker.R$id: int lap_time
 com.example.timetracker.R$id: int list_view
-com.example.timetracker.R$id: int start
-com.example.timetracker.R$id: int stop
+com.example.timetracker.R$id: int reset
+com.example.timetracker.R$id: int start_stop
 com.example.timetracker.R$layout: int main
 com.example.timetracker.R$layout: int row
 com.example.timetracker.R$string: int app_name

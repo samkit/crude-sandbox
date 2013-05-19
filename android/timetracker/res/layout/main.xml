@@ -16,15 +16,15 @@
     <LinearLayout android:orientation="horizontal"
                   android:layout_height="wrap_content"
                   android:layout_width="match_parent">
-        <Button android:id="@+id/start"
+        <Button android:id="@+id/start_stop"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:text="Start"
                 android:layout_weight="1"/>
-        <Button android:id="@+id/stop"
+        <Button android:id="@+id/reset"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
-                android:text="Stop"
+                android:text="Reset"
                 android:layout_weight="1"/>
     </LinearLayout>
 
