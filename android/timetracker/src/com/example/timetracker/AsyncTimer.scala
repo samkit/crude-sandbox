@@ -1,7 +1,6 @@
 package com.example.timetracker
 
 import android.os.{Message, Handler}
-import android.util.Log
 
 /**
  * Created with IntelliJ IDEA.

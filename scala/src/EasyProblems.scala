@@ -153,8 +153,23 @@ object EasyProblems extends App {
 
 	// println(p15(3, List('a, 'b, 'c, 'd, 'e)))
 	def p15[T](n: Int, list: List[T]): List[T] = list flatMap { List.fill(n)(_) }
+	
+	// println(p16(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'k)))
+	def p16[T](n: Int, list: List[T]): List[T] = {
+		list.zipWithIndex filter { v => (v._2 + 1) % n != 0 } map { _._1 }
+	}
+	
+	// println(p16(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'k)))
+	def p16a[T](n: Int, list: List[T]): List[T] = {
+		def disappear(list: List[T], n: Int, i: Int): List[T] = list match {
+			case f :: rest if (i % n == 0) => disappear(rest, n, i + 1)
+			case f :: rest => f :: disappear(rest, n, i + 1)
+			case f => f
+		}
+		disappear(list, n, 1)
+	}
 
 	override def main(args: Array[String]) = {
-		println(p15(3, List('a, 'b, 'c, 'd, 'e)))
+		println(p16(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'k)))
 	}
 }

@@ -1,12 +1,14 @@
 package com.example.timetracker
 
-import android.app.Activity
+import android.app.{FragmentTransaction, ActionBar, Activity}
 import android.os.{Handler, Bundle}
 import android.widget._
 import android.text.format.DateUtils
-import android.view.View
+import android.view.{MenuItem, Menu, View}
 import android.content.DialogInterface.OnClickListener
 import android.text.method.DateTimeKeyListener
+import android.app.ActionBar.{Tab, TabListener}
+import android.util.Log
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,9 +21,44 @@ class TimeTracker extends Activity with View.OnClickListener with AsyncTimerCall
     var timer: AsyncTimer = new AsyncTimer(this, 250)
     var startTime: Long = 0
 
+    override def onCreateOptionsMenu(menu: Menu): Boolean = {
+        super.onCreateOptionsMenu(menu)
+        var inflator = getMenuInflater()
+        inflator.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override def onOptionsItemSelected(item: MenuItem): Boolean = item.getItemId match {
+        case R.id.clear_all => {
+            Toast.makeText(getApplicationContext(), "Clearing", Toast.LENGTH_SHORT).show()
+            return true
+        }
+        case _ => super.onOptionsItemSelected(item)
+    }
+
     override def onCreate(savedInstance: Bundle) {
         super.onCreate(savedInstance)
         setContentView(R.layout.main)
+
+        val bar = getActionBar()
+        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS)
+
+        val listener = new TabListener {
+            def onTabReselected(tab: Tab, ft: FragmentTransaction) {
+                Log.e("TimeTracker", "Tab is reselected " + tab.getText)
+            }
+
+            def onTabUnselected(tab: Tab, ft: FragmentTransaction) {
+                Log.e("TimeTracker", "Tab is UNselected " + tab.getText)
+            }
+
+            def onTabSelected(tab: Tab, ft: FragmentTransaction) {
+                Log.e("TimeTracker", "Tab is SElected " + tab.getText)
+            }
+        }
+
+        bar.addTab(bar.newTab().setText("Tab 1").setTabListener(listener))
+        bar.addTab(bar.newTab().setText("Tab 2").setTabListener(listener))
 
         listAdaptor = new TimerListAdaptor(this, 0)
 
@@ -37,12 +74,14 @@ class TimeTracker extends Activity with View.OnClickListener with AsyncTimerCall
                 if (lapTimes != null) {
                     lapTimes.map { listAdaptor.add(_) }
                 }
-                lapTimesView.smoothScrollToPosition(firstVisibleIndex)
                 currentTimeView.setText(savedInstance.getString("current_time"))
+                lapTimesView.smoothScrollToPosition(firstVisibleIndex)
             }
         }
+        else {
+            currentTimeView.setText(DateUtils.formatElapsedTime(0))
+        }
 
-        findViewById(R.id.current_time).asInstanceOf[TextView].setText(DateUtils.formatElapsedTime(0))
         lapTimesView.setAdapter(listAdaptor)
 
         findViewById(R.id.start_stop).asInstanceOf[Button].setOnClickListener(this)
@@ -86,7 +125,7 @@ class TimeTracker extends Activity with View.OnClickListener with AsyncTimerCall
         view.setText(DateUtils.formatElapsedTime(elapsedTime))
     }
 
-    private def elapsedTime = System.currentTimeMillis - startTime
+    private def elapsedTime = (System.currentTimeMillis - startTime) / 1000
 
     private def startTimer() {
         startTime = System.currentTimeMillis
