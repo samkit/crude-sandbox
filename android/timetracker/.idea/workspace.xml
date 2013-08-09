@@ -5,7 +5,7 @@
       <filter>
         <option name="logLevel" value="verbose" />
         <option name="logMessagePattern" value="" />
-        <option name="logTagPattern" value="Process" />
+        <option name="logTagPattern" value="TimeTracker" />
         <option name="name" value="TimeTracker" />
         <option name="pid" value="" />
       </filter>
@@ -33,31 +33,36 @@
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/com/example/timetracker/TimeTracker.scala" line="41" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7dfbf364-b29c-4c22-b3e8-da110b05ef56" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/menu.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/timetracker/PagerFragment.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/timetracker/SamplePagerAdapter.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/pager.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/timetracker/AsyncTimer.scala" afterPath="$PROJECT_DIR$/src/com/example/timetracker/AsyncTimer.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../scala/src/EasyProblems.scala" afterPath="$PROJECT_DIR$/../../scala/src/EasyProblems.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/timetracker/TimeTracker.scala" afterPath="$PROJECT_DIR$/src/com/example/timetracker/TimeTracker.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proguard_logs/dump.txt" afterPath="$PROJECT_DIR$/proguard_logs/dump.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proguard-project.txt" afterPath="$PROJECT_DIR$/proguard-project.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proguard_logs/seeds.txt" afterPath="$PROJECT_DIR$/proguard_logs/seeds.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timetracker.iml" afterPath="$PROJECT_DIR$/timetracker.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proguard_logs/usage.txt" afterPath="$PROJECT_DIR$/proguard_logs/usage.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TimeTracker.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/TimeTracker.scala" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373126157559" ignored="false" />
-    <file path="/Dummy.txt" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373124611943" ignored="false" />
+    <file path="/TimeTracker.scala" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373181540256" ignored="false" />
+    <file path="/Dummy.txt" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373903218207" ignored="false" />
     <file path="/project.properties" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1368890412664" ignored="false" />
-    <file path="/fragment.java" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373130315142" ignored="false" />
+    <file path="/fragment.java" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373166289383" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373130505114" ignored="false" />
-    <file path="/main.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1368941728892" ignored="false" />
+    <file path="/main.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373184701032" ignored="false" />
     <file path="/TimerListAdaptor.scala" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1368893127247" ignored="false" />
     <file path="/row.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1368892915389" ignored="false" />
     <file path="/AsyncTimerCallback.scala" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1368943956821" ignored="false" />
@@ -68,6 +73,11 @@
     <file path="/menu.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373125362558" ignored="false" />
     <file path="/strings.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373119635024" ignored="false" />
     <file path="/a.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373124554390" ignored="false" />
+    <file path="/pager.xml" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373131722761" ignored="false" />
+    <file path="/SamplePagerAdapter.scala" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373182877403" ignored="false" />
+    <file path="/proguard-project.txt" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373132954993" ignored="false" />
+    <file path="/PagerFragment.scala" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373135378628" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/example/timetracker/BuildConfig.java" changelist="7dfbf364-b29c-4c22-b3e8-da110b05ef56" time="1373182875928" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +92,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -118,7 +129,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -140,25 +150,67 @@
       <file leaf-file-name="TimeTracker.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/TimeTracker.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="64" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.0">
+            <state line="57" column="31" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="PagerFragment.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/PagerFragment.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="116" selection-start="393" selection-end="393" vertical-scroll-proportion="0.13740458">
+            <state line="17" column="21" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="84" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.7335423">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="74" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SamplePagerAdapter.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/SamplePagerAdapter.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="59" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pager.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/pager.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="77" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="menu.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="36" selection-start="479" selection-end="479" vertical-scroll-proportion="-9.333333">
+            <state line="14" column="36" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,23 +237,26 @@
         <option value="$PROJECT_DIR$/project.properties" />
         <option value="$PROJECT_DIR$/res/layout/row.xml" />
         <option value="$PROJECT_DIR$/src/com/example/timetracker/TimerListAdaptor.scala" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/example/timetracker/AsyncTimerCallback.scala" />
         <option value="$PROJECT_DIR$/src/com/example/timetracker/AsyncTimer.scala" />
-        <option value="$PROJECT_DIR$/proguard-project.txt" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/menu.xml" />
         <option value="$PROJECT_DIR$/res/menu/menu.xml" />
+        <option value="$PROJECT_DIR$/res/layout/pager.xml" />
+        <option value="$PROJECT_DIR$/proguard-project.txt" />
+        <option value="$PROJECT_DIR$/src/com/example/timetracker/PagerFragment.scala" />
         <option value="$PROJECT_DIR$/src/com/example/timetracker/TimeTracker.scala" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/timetracker/SamplePagerAdapter.scala" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
+    <option name="x" value="-7" />
     <option name="y" value="-8" />
-    <option name="width" value="1940" />
-    <option name="height" value="1217" />
+    <option name="width" value="1934" />
+    <option name="height" value="1215" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -388,6 +443,11 @@
             <id>toString() issues</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -418,40 +478,12 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Revu">
+        <subPane subId="samkit-test-review">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timetracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timetracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timetracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -530,28 +562,42 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="timetracker">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="res">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Revu">
-        <subPane subId="samkit-test-review">
+      <pane id="ProjectPane">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeTracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeTracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeTracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -559,24 +605,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.XML" />
-    <property name="last_opened_file_path" value="/media/garbage/opt/scala-2.10.1/lib/scala-reflect.jar" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="last_opened_file_path" value="/media/garbage/opt/adt-bundle-linux-x86/sdk/extras/android/support/v4/android-support-v4.jar!/" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -616,19 +663,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -654,6 +688,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -711,8 +758,8 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
-      <option name="PREFERRED_AVD" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="Android_4.0.3" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="true" />
@@ -757,6 +804,11 @@
       <created>1368890020531</created>
       <updated>1368890020531</updated>
     </task>
+    <task id="LOCAL-00001" summary="WIP">
+      <created>1373130608660</created>
+      <updated>1373130608660</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -780,34 +832,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="-8" width="1940" height="1217" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-8" width="1934" height="1215" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="reVu" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290461" sideWeight="0.67045456" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24759872" sideWeight="0.22253788" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24759872" sideWeight="0.37026516" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285985" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24759872" sideWeight="0.44791666" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24812433" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67045456" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67045456" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.67045456" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -877,55 +929,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.058651026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/TimerListAdaptor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/AsyncTimerCallback.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="427" selection-end="427" vertical-scroll-proportion="-2.3376622" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/row.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="553" selection-end="561" vertical-scroll-proportion="0.27155173" />
-      </provider>
-    </entry>
-    <entry file="file:///media/garbage/opt/adt-bundle-linux-x86/sdk/sources/android-15/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="16" selection-start="3696" selection-end="3696" vertical-scroll-proportion="0.33300972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proguard-project.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.4764706" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="138" selection-end="138" vertical-scroll-proportion="-1.0384616" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/example/timetracker/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="171" selection-end="171" vertical-scroll-proportion="0.1319648" />
+        <state line="3" column="38" selection-start="138" selection-end="138" vertical-scroll-proportion="-1.0384616">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file:///media/garbage/opt/adt-bundle-linux-x86/sdk/sources/android-15/android/widget/Toast.java">
@@ -935,16 +943,32 @@
     </entry>
     <entry file="file://$USER_HOME$/.IdeaIC12/config/plugins/scratches/scratch2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file:///media/garbage/opt/adt-bundle-linux-x86/sdk/sources/android-15/android/view/MenuInflater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="16" selection-start="3042" selection-end="3042" vertical-scroll-proportion="0.3328446">
+        <state line="88" column="16" selection-start="3042" selection-end="3042" vertical-scroll-proportion="0.3328446" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proguard-project.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="46" selection-start="2671" selection-end="2671" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/com/example/timetracker/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="171" selection-end="171" vertical-scroll-proportion="0.1319648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="36" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/AsyncTimer.scala">
@@ -954,28 +978,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/pager.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="77" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file:///media/garbage/opt/adt-bundle-linux-x86/sdk/sources/android-15/android/widget/TextView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="479" selection-end="479" vertical-scroll-proportion="-9.333333">
+        <state line="227" column="13" selection-start="9372" selection-end="9372" vertical-scroll-proportion="-2.0395315" />
+      </provider>
+    </entry>
+    <entry file="jar:///media/garbage/opt/adt-bundle-linux-x86/sdk/extras/android/support/v4/android-support-v4.jar!/android/support/v4/app/FragmentPagerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="52" selection-start="727" selection-end="727" vertical-scroll-proportion="0.38356164" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/PagerFragment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="21" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/TimeTracker.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/SamplePagerAdapter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="64" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.0">
+        <state line="23" column="59" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="116" selection-start="393" selection-end="393" vertical-scroll-proportion="0.13740458">
+        <state line="5" column="74" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/timetracker/TimeTracker.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="31" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="84" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.7335423">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
@@ -1031,7 +1089,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Scala|timetracker</last-edited>
+          <last-edited>Android|timetracker</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1043,6 +1101,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>android-support-v4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

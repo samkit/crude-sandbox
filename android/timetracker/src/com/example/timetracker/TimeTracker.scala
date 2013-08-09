@@ -9,6 +9,8 @@ import android.content.DialogInterface.OnClickListener
 import android.text.method.DateTimeKeyListener
 import android.app.ActionBar.{Tab, TabListener}
 import android.util.Log
+import android.support.v4.view.ViewPager
+import android.support.v4.app.FragmentActivity
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,15 +18,14 @@ import android.util.Log
  * Date: 18/5/13
  * Time: 8:45 PM
  */
-class TimeTracker extends Activity with View.OnClickListener with AsyncTimerCallback {
+class TimeTracker extends FragmentActivity with View.OnClickListener with AsyncTimerCallback {
     var listAdaptor: TimerListAdaptor = _
     var timer: AsyncTimer = new AsyncTimer(this, 250)
     var startTime: Long = 0
 
     override def onCreateOptionsMenu(menu: Menu): Boolean = {
         super.onCreateOptionsMenu(menu)
-        var inflator = getMenuInflater()
-        inflator.inflate(R.menu.menu, menu)
+        getMenuInflater().inflate(R.menu.menu, menu)
         return true
     }
 
@@ -39,6 +40,11 @@ class TimeTracker extends Activity with View.OnClickListener with AsyncTimerCall
     override def onCreate(savedInstance: Bundle) {
         super.onCreate(savedInstance)
         setContentView(R.layout.main)
+
+        val adaptor = new SamplePagerAdapter(getSupportFragmentManager(), this)
+        val pager = findViewById(R.id.view_pager).asInstanceOf[ViewPager]
+        pager.setAdapter(adaptor)
+        pager.setCurrentItem(0)
 
         val bar = getActionBar()
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS)
@@ -92,7 +98,7 @@ class TimeTracker extends Activity with View.OnClickListener with AsyncTimerCall
         val currentTimeView = findViewById(R.id.current_time).asInstanceOf[TextView]
         val listView = findViewById(R.id.list_view).asInstanceOf[ListView]
         bundle.putInt("first_visible", listView.getFirstVisiblePosition)
-        var lapTimes = new Array[Long](listAdaptor.getCount)
+        val lapTimes = new Array[Long](listAdaptor.getCount)
         for (lap <- 0 to listAdaptor.getCount - 1)
             lapTimes.update(lap, listAdaptor.getItem(lap))
         bundle.putLongArray("lap_times", lapTimes)

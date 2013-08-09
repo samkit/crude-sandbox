@@ -59,6 +59,8 @@
 -dontwarn scala.concurrent.**
 -dontwarn scala.tools.**,plugintemplate.**
 
+-dontwarn android.support.**    # samkit added
+
 -dontnote org.xml.sax.EntityResolver
 
 #(org.apache.james.mime4j.storage.StorageProvider)Class.forName(variable).newInstance()
