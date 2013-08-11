@@ -17,16 +17,20 @@ class EyesContentProvider extends ContentProvider {
     def query(p1: Uri, p2: Array[String], p3: String, p4: Array[String], p5: String): Cursor = {
         Log.e("provider", "queried!!!")
         val cursor = new MatrixCursor(Array("_Id", "Name"))
-        cursor.addRow(Array[Object]("1", "first"))
-        cursor.addRow(Array[Object]("2", "second"))
+        cursor.addRow(Array[Object]("1", "one"))
+        cursor.addRow(Array[Object]("2", "two"))
+        cursor.addRow(Array[Object]("3", "three"))
+        cursor.addRow(Array[Object]("4", "four"))
+        cursor.addRow(Array[Object]("5", "five"))
+        cursor.addRow(Array[Object]("6", "six"))
+        cursor.addRow(Array[Object]("7", "seven"))
+        cursor.addRow(Array[Object]("8", "eight"))
+        cursor.addRow(Array[Object]("9", "nine"))
+        cursor.addRow(Array[Object]("10", "ten"))
         cursor
     }
 
-    def getType(p1: Uri): String = {
-        val ret = getContext().getContentResolver().getType(android.provider.Settings.System.CONTENT_URI)
-        Log.e("provider", "getType returning: " + ret)
-        ret
-    }
+    def getType(p1: Uri): String = EyesContract.MimeType
 
     def insert(p1: Uri, p2: ContentValues): Uri = p1
 

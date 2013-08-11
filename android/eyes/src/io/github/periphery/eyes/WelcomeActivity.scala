@@ -5,6 +5,10 @@ import android.os.{CountDownTimer, Bundle}
 import android.util.Log
 import android.support.v4.content.{CursorLoader, Loader}
 import android.database.Cursor
+import android.support.v4.widget.CursorAdapter
+import android.view.{ViewGroup, View}
+import android.content.Context
+import android.widget.{TextView, ListView}
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,6 +17,22 @@ import android.database.Cursor
  * Time: 10:39 AM
  */
 class WelcomeActivity extends FragmentActivity with LoaderManager.LoaderCallbacks[Cursor] {
+    private class EyesCursorAdapter(context: Context, cursor: Cursor, flags: Integer) extends CursorAdapter(context, cursor, flags) {
+        def newView(p1: Context, p2: Cursor, p3: ViewGroup): View = {
+            val layout = getLayoutInflater.inflate(R.layout.row, null)
+            val view = layout.findViewById(R.id.one_row).asInstanceOf[TextView]
+            val value = p2.getString(p2.getColumnIndex("Name"))
+            view.setText(value)
+            layout
+        }
+
+        def bindView(view: View, p2: Context, cursor: Cursor) {
+//            view.asInstanceOf[TextView].setText(cursor.getString(cursor.getColumnIndex(EyesContract.Projection.Name)))
+        }
+    }
+
+    private var adapter: EyesCursorAdapter = _
+
     override def onCreate(savedInstanceState: Bundle) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.welcome_screen)
@@ -26,6 +46,10 @@ class WelcomeActivity extends FragmentActivity with LoaderManager.LoaderCallback
         Log.e("welcome", "Content uri is " + EyesContract.ContentUri.toString)
 
         getSupportLoaderManager.initLoader(0, null, this)
+
+        adapter = new EyesCursorAdapter(getApplicationContext, null, 0)
+        val listView = findViewById(R.id.my_list_view).asInstanceOf[ListView]
+        listView.setAdapter(adapter)
     }
 
     def onCreateLoader(p1: Int, p2: Bundle): Loader[Cursor] = {
@@ -44,6 +68,8 @@ class WelcomeActivity extends FragmentActivity with LoaderManager.LoaderCallback
         }
         else
             Log.wtf("loader", "OnLoadFinished: no cursor returned")
+
+        adapter.swapCursor(p2)
     }
 
     def onLoaderReset(p1: Loader[Cursor]) {

@@ -41,5 +41,6 @@ android.support.v4.widget.SlidingPaneLayout$LayoutParams: SlidingPaneLayout$Layo
 android.support.v4.widget.SlidingPaneLayout$SavedState
 android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
 io.github.periphery.eyes.EyesContentProvider
+io.github.periphery.eyes.EyesContentProvider: EyesContentProvider()
 io.github.periphery.eyes.WelcomeActivity
 io.github.periphery.eyes.WelcomeActivity: WelcomeActivity()

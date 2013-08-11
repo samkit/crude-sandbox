@@ -787,12 +787,14 @@ android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRec
 android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
 android.support.v4.view.accessibility.AccessibilityRecordCompatIcsMr1
 android.support.v4.view.accessibility.AccessibilityRecordCompatJellyBean
-android.support.v4.widget.CursorAdapter
-android.support.v4.widget.CursorAdapter$1
-android.support.v4.widget.CursorAdapter$ChangeObserver
-android.support.v4.widget.CursorAdapter$MyDataSetObserver
-android.support.v4.widget.CursorFilter
-android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.CursorAdapter:
+    public static final int FLAG_AUTO_REQUERY
+    public static final int FLAG_REGISTER_CONTENT_OBSERVER
+    121:123:public CursorAdapter(android.content.Context,android.database.Cursor)
+    137:139:public CursorAdapter(android.content.Context,android.database.Cursor,boolean)
+    160:161:protected void init(android.content.Context,android.database.Cursor,boolean)
+    420:420:public android.widget.FilterQueryProvider getFilterQueryProvider()
+    436:437:public void setFilterQueryProvider(android.widget.FilterQueryProvider)
 android.support.v4.widget.DrawerLayout:
     private static final java.lang.String TAG
     public static final int STATE_IDLE
@@ -1001,13 +1003,15 @@ io.github.periphery.eyes.EyesContract:
     public static android.net.Uri ContentUri()
     public static java.lang.String Ssp()
 io.github.periphery.eyes.EyesContract$:
-    10:10:public java.lang.String Ssp()
-    13:13:public java.lang.String MimeType()
-io.github.periphery.eyes.R
+    9:9:public java.lang.String Ssp()
+io.github.periphery.eyes.R:
+    10:24:public R()
 io.github.periphery.eyes.R$attr
 io.github.periphery.eyes.R$drawable
-io.github.periphery.eyes.R$id
-io.github.periphery.eyes.R$layout
+io.github.periphery.eyes.R$id:
+    16:16:public R$id()
+io.github.periphery.eyes.R$layout:
+    20:20:public R$layout()
 io.github.periphery.eyes.R$string
 scala.AnyVal
 scala.AnyValCompanion
@@ -2391,7 +2395,6 @@ scala.Predef$:
     367:367:public java.lang.Byte byte2Byte(byte)
     368:368:public java.lang.Short short2Short(short)
     369:369:public java.lang.Character char2Character(char)
-    370:370:public java.lang.Integer int2Integer(int)
     371:371:public java.lang.Long long2Long(long)
     372:372:public java.lang.Float float2Float(float)
     373:373:public java.lang.Double double2Double(double)
@@ -2407,7 +2410,6 @@ scala.Predef$:
     389:389:public byte Byte2byte(java.lang.Byte)
     390:390:public short Short2short(java.lang.Short)
     391:391:public char Character2char(java.lang.Character)
-    392:392:public int Integer2int(java.lang.Integer)
     393:393:public long Long2long(java.lang.Long)
     394:394:public float Float2float(java.lang.Float)
     395:395:public double Double2double(java.lang.Double)
