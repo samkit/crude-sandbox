@@ -15,6 +15,7 @@ android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator
 android.support.v4.content.FileProvider
 android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
 android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.content.WakefulBroadcastReceiver
 android.support.v4.view.PagerTabStrip
 android.support.v4.view.PagerTabStrip: PagerTabStrip(android.content.Context,android.util.AttributeSet)
 android.support.v4.view.PagerTitleStrip
@@ -33,12 +34,12 @@ android.support.v4.widget.DrawerLayout$LayoutParams: DrawerLayout$LayoutParams(a
 android.support.v4.widget.DrawerLayout$SavedState
 android.support.v4.widget.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
 android.support.v4.widget.SlidingPaneLayout
-android.support.v4.widget.SlidingPaneLayout: SlidingPaneLayout(android.content.Context)
 android.support.v4.widget.SlidingPaneLayout: SlidingPaneLayout(android.content.Context,android.util.AttributeSet)
 android.support.v4.widget.SlidingPaneLayout: SlidingPaneLayout(android.content.Context,android.util.AttributeSet,int)
 android.support.v4.widget.SlidingPaneLayout$LayoutParams
 android.support.v4.widget.SlidingPaneLayout$LayoutParams: SlidingPaneLayout$LayoutParams(android.content.Context,android.util.AttributeSet)
 android.support.v4.widget.SlidingPaneLayout$SavedState
 android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+io.github.periphery.eyes.EyesContentProvider
 io.github.periphery.eyes.WelcomeActivity
 io.github.periphery.eyes.WelcomeActivity: WelcomeActivity()

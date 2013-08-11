@@ -64,7 +64,7 @@
 -dontnote org.xml.sax.EntityResolver
 
 #(org.apache.james.mime4j.storage.StorageProvider)Class.forName(variable).newInstance()
--dontnote org.apache.james.mime4j.storage.DefaultStorageProvider
+#-dontnote org.apache.james.mime4j.storage.DefaultStorageProvider
 
 ## Fixes ==> Warning: ... can't find referenced class sun.misc.Unsafe
 -dontwarn sun.misc.Unsafe
@@ -96,7 +96,7 @@
 -keep public class * extends android.content.ContentProvider
 -keep public class * extends android.app.backup.BackupAgentHelper
 -keep public class * extends android.preference.Preference
--keep public class com.android.vending.licensing.ILicensingService
+#-keep public class com.android.vending.licensing.ILicensingService
 
 -keepclasseswithmembernames class * {
     native <methods>;
@@ -120,9 +120,9 @@
 }
 
 ## don't let proguard screw around with actionbar sherlock (else you'll get vague errors and blame scala probably)
--keepclassmembers class * extends com.actionbarsherlock.ActionBarSherlock {
-    <init>(android.app.Activity, int);
-}
+#-keepclassmembers class * extends com.actionbarsherlock.ActionBarSherlock {
+#    <init>(android.app.Activity, int);
+#}
 
 # lines below are probably not needed anymore, but if you're ever getting proguard errors, change them to match your packages and paths.
 #-keep class com.example.android_scala**

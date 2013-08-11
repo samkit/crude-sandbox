@@ -3,6 +3,8 @@
           package="io.github.periphery.eyes">
     <uses-sdk android:minSdkVersion="15"/>
     <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <provider android:authorities="io.github.periphery.eyes.provider"
+                  android:name=".EyesContentProvider"/>
         <activity android:name=".WelcomeActivity" android:icon="@android:drawable/arrow_up_float" android:label="Eyes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

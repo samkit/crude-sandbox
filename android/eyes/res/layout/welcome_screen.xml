@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
-
-    <TextView android:text="Text 1"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"/>
+              android:layout_height="match_parent">
 
-    <TextView android:text="Text 2"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"/>
+    <ListView android:id="@+id/my_list_view"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent">
+    </ListView>
 
-</android.support.v4.widget.SlidingPaneLayout>
+</LinearLayout>
