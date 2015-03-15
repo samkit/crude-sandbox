@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file:///media/garbage/code/android/ContentShell/ContentShell.iml" filepath="/media/garbage/code/android/ContentShell/ContentShell.iml" />
+      <module fileurl="file:///media/garbage/code/android/ContentShell/app/app.iml" filepath="/media/garbage/code/android/ContentShell/app/app.iml" />
+    </modules>
+  </component>
+</project>
+
