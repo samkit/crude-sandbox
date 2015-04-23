@@ -1,0 +1,10 @@
+src ->
+https://codeload.github.com/crosswalk-project/chromium-crosswalk/zip/ae22fbb981dced64f4dca4e6cc621c42503f8a6c.zip
+
+src/third_party/WebKit ->
+https://github.com/crosswalk-project/blink-crosswalk/archive/9e5f933200fbcd881af6a5cc9d7258af282f8bc7.zip
+
+src/v8 ->
+https://github.com/crosswalk-project/v8-crosswalk/archive/daace54da045c268c7cba547e015bd6e0ab0525b.zip
+
+src/third_party/khronos/CL -> https://www.khronos.org/registry/khronos_headers.tgz
