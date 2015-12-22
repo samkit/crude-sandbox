@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env pypy
 
 import fractions
 import random
@@ -83,4 +83,7 @@ if __name__ == '__main__':
     print 'All keys:', allKeys
     print 'Select %d keys: %s' % (minimumParticipants, randomKeys)
 
-    print 'Secret:', reconstructSecret(*randomKeys)
+    reconstructedSecret = reconstructSecret(*randomKeys)
+    print 'Secret:', reconstructedSecret
+
+    assert reconstructedSecret == secret
