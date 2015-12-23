@@ -13,7 +13,6 @@ def computePolynomial(secret, x, coefficients):
 
 def divide(secret, minimum, maximum):
     coefficients = [ random.randint(1000, 10000) for i in range(minimum - 1) ]
-    coefficients = (166, 94)
     keys = []
     for i in range(1, maximum + 1):
         keys.append([ i, computePolynomial(secret, i, coefficients) ])
